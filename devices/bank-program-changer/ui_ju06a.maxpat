@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 256.0, 439.0, 2105.0, 536.0 ],
+		"rect" : [ 407.0, 531.0, 901.0, 676.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 170.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -19,12 +19,40 @@
 		"boxanimatetime" : 500,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-6",
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 98.0, 234.5, 65.0, 25.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 7.0, 106.0, 25.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 2,
+							"parameter_longname" : "Current",
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "Current",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "Current"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 431.5, 236.0, 126.0, 20.0 ],
+					"patching_rect" : [ 431.5, 236.0, 128.0, 20.0 ],
 					"text" : "r ---parent-restore-trigger"
 				}
 
@@ -51,18 +79,16 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"parameter_mappable" : 1,
 					"patching_rect" : [ 282.0, 511.0, 101.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 44.0, 73.0, 62.0, 30.0 ],
-						"saved_attribute_attributes" : 					{
-							"valueof" : 						{
-								"parameter_enum" : [ "val1", "val2" ],
-								"parameter_invisible" : 0,
-								"parameter_longname" : "Decrease",
-								"parameter_mmax" : 1,
-								"parameter_modmode" : 0,
-								"parameter_shortname" : "Dec",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "Decrease",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Dec",
 							"parameter_type" : 2
 						}
 
@@ -95,18 +121,16 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"parameter_mappable" : 1,
 					"patching_rect" : [ 80.0, 105.0, 180.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 38.0, 38.0, 127.0 ],
-						"saved_attribute_attributes" : 					{
-							"valueof" : 						{
-								"parameter_enum" : [ "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8" ],
-								"parameter_invisible" : 0,
-								"parameter_longname" : "Bank",
-								"parameter_mmax" : 7,
-								"parameter_modmode" : 0,
-								"parameter_shortname" : "Bank",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8" ],
+							"parameter_longname" : "Bank",
+							"parameter_mmax" : 7,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Bank",
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 9
 						}
@@ -114,22 +138,6 @@
 					}
 ,
 					"varname" : "bank_selector"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-pc",
-					"maxclass" : "number",
-					"maximum" : 8,
-					"minimum" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 80.0, 237.0, 56.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 44.0, 111.0, 62.0, 20.0 ]
 				}
 
 			}
@@ -194,21 +202,21 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 18.0,
+					"fontsize" : 10.0,
 					"id" : "obj-global-display",
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 700.0, 349.5, 95.0, 25.0 ],
+					"patching_rect" : [ 700.0, 349.5, 65.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 7.0, 106.0, 25.0 ],
+					"presentation_rect" : [ 44.0, 111.0, 62.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Global",
+							"parameter_longname" : "Global Program",
 							"parameter_mmax" : 64.0,
 							"parameter_mmin" : 1.0,
 							"parameter_modmode" : 0,
@@ -261,7 +269,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "0 ms", "5 ms", "10 ms" ],
-							"parameter_longname" : "Delay",
+							"parameter_longname" : "Delay UI",
 							"parameter_mmax" : 2,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "Delay",
@@ -275,22 +283,22 @@
 				}
 
 			}
-	, 			{
-					"box" : 				{
-						"id" : "obj-restore-begin-msg",
-						"maxclass" : "message",
-						"numinlets" : 2,
-						"numoutlets" : 1,
-						"outlettype" : [ "" ],
-						"patching_rect" : [ 559.5, 236.0, 76.0, 20.0 ],
-						"text" : "restorebegin"
-					}
-
+, 			{
+				"box" : 				{
+					"id" : "obj-restore-begin-msg",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 559.5, 236.0, 76.0, 20.0 ],
+					"text" : "restorebegin"
 				}
-	, 			{
-					"box" : 				{
-						"id" : "obj-delay-init",
-						"maxclass" : "message",
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-delay-init",
+					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
@@ -323,45 +331,45 @@
 				}
 
 			}
-	, 			{
-					"box" : 				{
-						"id" : "obj-restore-end",
-						"maxclass" : "newobj",
-						"numinlets" : 2,
-						"numoutlets" : 1,
-						"outlettype" : [ "bang" ],
-						"patching_rect" : [ 559.5, 266.0, 58.0, 20.0 ],
-						"text" : "delay 260"
-					}
-
+, 			{
+				"box" : 				{
+					"id" : "obj-restore-end",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 559.5, 266.0, 58.0, 20.0 ],
+					"text" : "delay 260"
 				}
-	, 			{
-					"box" : 				{
-						"id" : "obj-restore-end-msg",
-						"maxclass" : "message",
-						"numinlets" : 2,
-						"numoutlets" : 1,
-						"outlettype" : [ "" ],
-						"patching_rect" : [ 559.5, 298.0, 68.0, 20.0 ],
-						"text" : "restoreend"
-					}
 
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-restore-end-msg",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 559.5, 298.0, 68.0, 20.0 ],
+					"text" : "restoreend"
 				}
-	, 			{
-					"box" : 				{
-						"id" : "obj-send-restore",
-						"maxclass" : "newobj",
-						"numinlets" : 1,
-						"numoutlets" : 0,
-						"patching_rect" : [ 559.5, 330.0, 109.0, 20.0 ],
-						"text" : "s ---ui-restore-action"
-					}
 
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-send-restore",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 559.5, 330.0, 109.0, 20.0 ],
+					"text" : "s ---ui-restore-action"
 				}
-	, 			{
-					"box" : 				{
-						"id" : "obj-send-bank",
-						"maxclass" : "newobj",
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-send-bank",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 80.0, 137.0, 121.0, 20.0 ],
@@ -673,18 +681,16 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-						"parameter_mappable" : 1,
 					"patching_rect" : [ 231.0, 366.0, 93.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 44.0, 38.0, 62.0, 30.0 ],
-						"saved_attribute_attributes" : 					{
-							"valueof" : 						{
-								"parameter_enum" : [ "val1", "val2" ],
-								"parameter_invisible" : 0,
-								"parameter_longname" : "Increase",
-								"parameter_mmax" : 1,
-								"parameter_modmode" : 0,
-								"parameter_shortname" : "Inc",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_longname" : "Increase",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Inc",
 							"parameter_type" : 2
 						}
 
@@ -717,77 +723,53 @@
 				}
 
 			}
-	, 			{
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-restore-begin-msg", 0 ],
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
-	, 			{
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-restore-delay", 0 ],
+					"order" : 3,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
-				"patchline" : 				{
-					"destination" : [ "obj-delay-init", 0 ],
-					"source" : [ "obj-restore-delay", 0 ]
-				}
-
-			}
-	, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-restore-end", 0 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-	, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-restore-delay-late", 0 ],
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-delay-init", 0 ],
-					"source" : [ "obj-restore-delay-late", 0 ]
+					"destination" : [ "obj-restore-end", 0 ],
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
-	, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-send-restore", 0 ],
-					"source" : [ "obj-restore-begin-msg", 0 ]
-				}
-
-			}
-	, 			{
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-send-dec", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
-	, 			{
+, 			{
 				"patchline" : 				{
-					"destination" : [ "obj-restore-end-msg", 0 ],
-					"source" : [ "obj-restore-end", 0 ]
+					"destination" : [ "obj-send-pc", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
-	, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-send-restore", 0 ],
-					"source" : [ "obj-restore-end-msg", 0 ]
-				}
-
-			}
-	, 			{
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-send-bank", 0 ],
 					"source" : [ "obj-bank", 0 ]
@@ -798,6 +780,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-delay-send-select", 0 ],
 					"source" : [ "obj-delay", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-delay", 0 ],
+					"order" : 1,
+					"source" : [ "obj-delay-init", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-global-display", 0 ],
+					"order" : 0,
+					"source" : [ "obj-delay-init", 0 ]
 				}
 
 			}
@@ -845,29 +843,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-delay", 0 ],
-					"source" : [ "obj-delay-init", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-global-display", 0 ],
-					"source" : [ "obj-delay-init", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-send-global", 0 ],
 					"source" : [ "obj-global-display", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-send-pc", 0 ],
-					"source" : [ "obj-pc", 0 ]
 				}
 
 			}
@@ -910,6 +887,41 @@
 				"patchline" : 				{
 					"destination" : [ "obj-set-send-values", 0 ],
 					"source" : [ "obj-recv-send-values", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-send-restore", 0 ],
+					"source" : [ "obj-restore-begin-msg", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-delay-init", 0 ],
+					"source" : [ "obj-restore-delay", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-delay-init", 0 ],
+					"source" : [ "obj-restore-delay-late", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-restore-end-msg", 0 ],
+					"source" : [ "obj-restore-end", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-send-restore", 0 ],
+					"source" : [ "obj-restore-end-msg", 0 ]
 				}
 
 			}
@@ -985,7 +997,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-pc", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-set-pc", 0 ]
 				}
 
